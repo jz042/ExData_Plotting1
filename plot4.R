@@ -27,13 +27,13 @@ par(mfrow=c(2,2),cex=0.6)
 
 plot(xrange,DT$Global_active_power,type="l",main="",xlab="",ylab="Global Active Power")
 
-plot(xrange,DT$Voltage,type="l",main="",ylab="Voltage",xlab="")
+plot(xrange,DT$Voltage,type="l",main="",ylab="Voltage",xlab="datetime")
 
 plot(xrange,yrange1,type="l",ylab="Energy sub metering",xlab="")
 lines(xrange,yrange2,type="l",col="red")
 lines(xrange,yrange3,type="l",col="blue")
 legend("topright",legendtext,lty=1,col=c("black","red","blue"),bty="n")
 
-plot(xrange,DT$Global_reactive_power, type="l",main="", ylab="Global Reactive Power",xlab="")
+plot(xrange,DT$Global_reactive_power, type="l",main="", ylab="Global Reactive Power",xlab="datetime")
 
 dev.off()
